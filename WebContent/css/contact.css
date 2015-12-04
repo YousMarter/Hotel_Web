@@ -1,0 +1,280 @@
+
+@charset "utf-8";
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    background:transparent;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+
+ul, dl {
+    list-style:none;
+}
+
+a {
+  text-decoration:none;
+  background: none;
+  }
+
+html,body {margin:0;padding:0;} 
+
+
+
+/*~~~~~~~~~~~ Responsive Resets ~~~~~~~~~~~*/
+
+@-o-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+
+html {
+  overflow-y: auto;
+}
+
+img,
+audio,
+video,
+canvas {
+  max-width: 100%;
+}
+
+
+/*~~~~~~~~~~~ Layout ~~~~~~~~~~~*/
+body {
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: #8e8e8e;
+	background:url(../images/bookroom2.jpg);
+	font-size:18px;
+	line-height:28px;
+}
+.wrapper {
+	position:relative;
+	overflow:hidden;
+	width:100%;
+}
+.container {
+    padding:0 20px 150px;
+}
+.container-fill {
+	float: left;
+	width: 100%;
+	margin:0 auto;
+	background:#f2f2e8;
+	display: block;
+}
+.home_page + .container-fill {
+	margin:549px auto 0;
+}
+
+header {
+	position: relative;
+	background-color: #fff;
+	margin: 0 auto;
+	width: 100%;
+	height: 100px;
+	-webkit-box-shadow: 0 1px 5px -1px #333;
+	-moz-box-shadow: 0 1px 5px -1px #333;
+	box-shadow: 0 1px 5px -1px #333;
+	clear: both;
+	z-index: 99 !important;
+}
+header .container {
+    padding:0 20px 0px;
+}
+
+
+footer {
+	width: 100%;
+	padding:35px 0;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, serif;
+}
+footer .container {
+	padding:0;
+}
+
+
+
+/*~~~~~~~~~~~ Typography ~~~~~~~~~~~*/
+p {
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	margin:30px 0 25px;
+	color: #8e8e8e;
+}
+
+p.blog-date {
+	font-style: italic;
+	color: #bfbfbf;
+}
+
+/*~~~~~~~~~~~ Headings ~~~~~~~~~~~*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height:1em;
+	padding:20px 0 0;
+	color:#341139;
+}
+
+h1 {
+	text-align: center;
+	color: #444135;
+	padding:0;
+	height:100px;
+	background:url(../images/bookroom.png) center 50px no-repeat;
+	text-indent:-9999em;
+	overflow:hidden;
+}
+
+.slogan {
+	text-transform:uppercase;
+	font-size:24px;
+	line-height:24px;
+	color:#fff;
+	text-align:center;
+}
+h3 {
+	font-size:48px;
+	text-align:center;
+	padding:25px 0 8px;
+	margin:0 0 32px;
+}
+
+p.testim {
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, serif;
+	font-size:40px;
+	line-height:50px;
+}
+.testim_post h3 a:hover {
+	color:#359668;
+}
+h3 a:hover {
+	color:#A8D46F;
+}
+h4 {
+	font-size:30px;
+}
+h4.small {
+	font-size:24px;
+}
+h6 {
+	font-size:12px;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform:uppercase;
+	padding:30px 0 0;
+}
+h5 {
+	font-size:18px;
+}
+h5 a, h5 span {
+	color:#a8d46f;
+}
+h5 a:hover {
+	color:#359668;
+}
+h6 a {
+	color:#341139;
+	text-decoration:underline;
+}
+h6 a:hover {
+	text-decoration:underline;
+	color:#359668;
+}
+/*~~~~~~~~~~~ Links ~~~~~~~~~~~*/
+
+
+a.logo {
+	text-indent: -9999px;
+	float: left;
+	width: 195px;
+	height: 40px;
+	background:url(../images/contact.png) left top no-repeat;
+	background-size: 195px 40px;  
+	display: block;
+	margin-top:31px;
+}
+
+
+
+
+/*~~~~~~~~~~~ Navigation ~~~~~~~~~~~*/
+ul.menu {
+	width: auto;
+	list-style-type: none;
+	float: right;
+	margin-top: 40px;
+}
+
+ul.menu li {
+	font-style: normal;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 0 0 0 30px;
+	float: left;
+}
+
+ul.menu li a {
+	text-decoration: none;
+	color: #34322a;
+	-moz-transition: all 0.65s;
+	-ms-transition: all 0.65s;
+	-o-transition: all 0.65s;
+	-webkit-transition: all 0.65s;
+	transition: all 0.65s;
+}
+
+ul.menu li a:hover,ul.menu li a.active {
+	color:#a8d46f;
+}
+
+ ul.menu li.current a {
+	border-top: 2px solid #f07057;
+	padding-top: 10px;	 
+}
+ 
+/*ul.menu span.separator {
+	padding: 0 5px;
+}*/
+
+
+
+
+
+/*~~~~~~~~~~~ Media ~~~~~~~~~~~*/
+img {
+    max-width:100%;
+    height: auto; 
+    /*width:100%*/ 
+}
+
+
+
